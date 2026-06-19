@@ -52,27 +52,35 @@ DirectRunner             DataflowRunner
 apache-beam-mastery/
 │
 ├── README.md                         # This file
+├── CONCEPTS.md                       # ★ Cheat sheet — all key concepts on one page
 ├── requirements.txt                  # Python dependencies
 │
 ├── Beginner/
 │   ├── 01_hello_beam.py              # First pipeline, DirectRunner
 │   ├── 02_basic_transforms.py        # Map, FlatMap, Filter, Combine
 │   ├── 03_read_write_local.py        # Read/write local text files
-│   └── 04_read_write_gcs.py          # Read/write Google Cloud Storage
+│   ├── 04_read_write_gcs.py          # Read/write Google Cloud Storage
+│   ├── 05_composite_transforms.py    # ★ Reusable PTransform subclasses
+│   └── 06_custom_pipeline_options.py # ★ Custom CLI flags via PipelineOptions
 │
 ├── Intermediate/
 │   ├── 01_dataflow_runner.py         # Submitting to Dataflow
 │   ├── 02_groupbykey_cogroupbykey.py # Joins in Beam
 │   ├── 03_side_inputs.py             # Side inputs pattern
 │   ├── 04_windowing.py               # Fixed, Sliding, Session windows
-│   └── 05_bigquery_read_write.py     # BigQuery I/O
+│   ├── 05_bigquery_read_write.py     # BigQuery I/O
+│   ├── 06_schemas_and_coders.py      # ★ NamedTuple schemas, beam.Row, custom Coders
+│   ├── 07_metrics.py                 # ★ Counter, Distribution, Gauge in DoFns
+│   └── 08_partition.py               # ★ beam.Partition — fan-out into N PCollections
 │
 ├── Advanced/
 │   ├── 01_streaming_pubsub.py        # Streaming from Pub/Sub
 │   ├── 02_stateful_dofn.py           # State & Timers API
 │   ├── 03_custom_dofn_patterns.py    # Advanced DoFn patterns
 │   ├── 04_dead_letter_queue.py       # Error handling / DLQ
-│   └── 05_performance_tuning.py      # Dataflow performance best practices
+│   ├── 05_performance_tuning.py      # Dataflow performance best practices
+│   ├── 06_splittable_dofn.py         # ★ Splittable DoFns — custom I/O connectors
+│   └── 07_triggers_deep_dive.py      # ★ All trigger types + accumulation modes
 │
 ├── Projects/
 │   ├── 01_Beginner_GCS_to_BigQuery/
