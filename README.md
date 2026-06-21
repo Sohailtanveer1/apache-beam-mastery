@@ -61,7 +61,8 @@ apache-beam-mastery/
 │   ├── 03_read_write_local.py        # Read/write local text files
 │   ├── 04_read_write_gcs.py          # Read/write Google Cloud Storage
 │   ├── 05_composite_transforms.py    # ★ Reusable PTransform subclasses
-│   └── 06_custom_pipeline_options.py # ★ Custom CLI flags via PipelineOptions
+│   ├── 06_custom_pipeline_options.py # ★ Custom CLI flags via PipelineOptions
+│   └── 07_timestamps_and_watermarks.py # ★ AddTimestampDoFn, TimestampedValue, allowed lateness
 │
 ├── Intermediate/
 │   ├── 01_dataflow_runner.py         # Submitting to Dataflow
@@ -71,7 +72,9 @@ apache-beam-mastery/
 │   ├── 05_bigquery_read_write.py     # BigQuery I/O
 │   ├── 06_schemas_and_coders.py      # ★ NamedTuple schemas, beam.Row, custom Coders
 │   ├── 07_metrics.py                 # ★ Counter, Distribution, Gauge in DoFns
-│   └── 08_partition.py               # ★ beam.Partition — fan-out into N PCollections
+│   ├── 08_partition.py               # ★ beam.Partition — fan-out into N PCollections
+│   ├── 09_combine_fn_advanced.py     # ★ Full CombineFn lifecycle, AverageFn, StatsCombineFn
+│   └── 10_schema_groupby_aggregations.py # ★ beam.GroupBy().aggregate_field(), beam.FlattenWith
 │
 ├── Advanced/
 │   ├── 01_streaming_pubsub.py        # Streaming from Pub/Sub
@@ -80,7 +83,10 @@ apache-beam-mastery/
 │   ├── 04_dead_letter_queue.py       # Error handling / DLQ
 │   ├── 05_performance_tuning.py      # Dataflow performance best practices
 │   ├── 06_splittable_dofn.py         # ★ Splittable DoFns — custom I/O connectors
-│   └── 07_triggers_deep_dive.py      # ★ All trigger types + accumulation modes
+│   ├── 07_triggers_deep_dive.py      # ★ All trigger types + accumulation modes
+│   ├── 08_state_all_types.py         # ★ ReadModifyWrite, Combining, Bag, Set state + GC
+│   ├── 09_state_timers_real_examples.py # ★ Click-view join, BatchRPC, LoopingHeartbeat
+│   └── 10_multi_language_pipeline.py # ★ Kafka cross-lang, JavaExternalTransform, SqlTransform
 │
 ├── Projects/
 │   ├── 01_Beginner_GCS_to_BigQuery/
